@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="2" author="Sasha">
+        <sql>
+            create table servlet.product
+            (
+                id             int primary key,
+                marking        text           not null,
+                type           varchar(30)    not null,
+                is_on_discount boolean        not null,
+                description    varchar(30)    not null,
+                price          decimal(19, 2) not null
+            );
+        </sql>
+    </changeSet>
+
+
+</databaseChangeLog>

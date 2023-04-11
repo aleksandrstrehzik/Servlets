@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <include file="db-migrations/2023-04-09-createBdIfNotExist.xml" relativeToChangelogFile="true"/>
+    <include file="db-migrations/2023-04-09-createProductTable.xml" relativeToChangelogFile="true"/>
+    <include file="db-migrations/2023-04-09-createCardTable.xml" relativeToChangelogFile="true"/>
+    <include file="db-migrations/2023-04-09-insertIntoProduct.xml" relativeToChangelogFile="true"/>
+    <include file="db-migrations/2023-04-09-insertIntoCard.xml" relativeToChangelogFile="true"/>
+    <!--<changeSet id="1" author="Sasha">
+        <sql>
+
+            create table public.product
+            (
+                id             int primary key,
+                marking        text           not null,
+                type           varchar(30)    not null,
+                is_on_discount boolean        not null,
+                description    varchar(30)    not null,
+                price          decimal(19, 2) not null
+            );
+
+            create table public.discount_card
+            (
+                id       int primary key,
+                discount decimal(19, 2) not null
+            );
+
+            Insert into public.product(id, marking, type, is_on_discount, description, price)
+            values (1, 'Flour, water and salt', 'BAKE', true, 'Bread', 10.5),
+                   (2, 'Flour, water, raisin, sugar and salt', 'BAKE', false, 'Bun', 5.5),
+                   (3, 'Ingredients: water, fat, proteins, lactose (milk sugar) and minerals (salts)', 'MILK', false,
+                    'Milk',
+                    34.22),
+                   (4, 'Protein, some fat, carbohydrates, water, bifidobacteria, vitamins and minerals', 'MILK', false,
+                    'Yogurt',
+                    56.26),
+                   (6, 'Frutoza', 'FRUIT', true, 'Apple', 15.23),
+                   (7, 'Frutoza', 'FRUIT', false, 'Orange', 100.97);
+        </sql>
+    </changeSet>-->
+
+
+</databaseChangeLog>
