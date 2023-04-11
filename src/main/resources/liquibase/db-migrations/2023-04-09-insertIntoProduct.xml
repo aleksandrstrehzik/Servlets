@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="4" author="Sasha">
+        <sql>
+            Insert into servlet.product(id, marking, type, is_on_discount, description, price)
+            values (1, 'Flour, water and salt', 'BAKE', true, 'Bread', 10.5),
+                   (2, 'Flour, water, raisin, sugar and salt', 'BAKE', false, 'Bun', 5.5),
+                   (3, 'Water, fat, proteins, lactose (milk sugar)', 'MILK', false, 'Milk',
+                    34.22),
+                   (4, 'Protein, some fat, carbohydrates, water, bifidobacteria', 'MILK', false, 'Yogurt',
+                    56.26),
+                   (5, 'Starch', 'FRUIT', true, 'Apple', 15.23),
+                   (6, 'Frutoza', 'FRUIT', false, 'Orange', 100.97),
+                   (7, 'Starch', 'FRUIT', true, 'Pineapple', 19.32),
+                   (8, 'Frutoza', 'FRUIT', false, 'Pear', 1.09),
+                   (9, 'Frutoza', 'FRUIT', false, 'Grape', 13.40),
+                   (10, 'Starch', 'VEGETABLE', true, 'Potato', 0.94),
+                   (11, 'Starch', 'VEGETABLE', false, 'Carrot', 12.76),
+                   (12, 'Frutoza', 'VEGETABLE', true, 'Beet', 34.76),
+                   (13, 'Starch', 'VEGETABLE', true, 'Turnip', 10.32),
+                   (14, 'Starch', 'VEGETABLE', false, 'Swede', 94.63),
+                   (15, 'Frutoza', 'VEGETABLE', true, 'Cabbage', 81.54),
+                   (16, 'Starch', 'VEGETABLE', true, 'Radish', 90.45),
+                   (17, 'Husk', 'NUTS', true, 'Pistachios', 287.92),
+                   (18, 'Husk', 'NUTS', false, 'Cashew', 287.92),
+                   (19, 'Husk', 'NUTS', false, 'Hazelnut', 90.23),
+                   (20, 'Husk', 'NUTS', true, 'Cobnut', 48.92),
+                   (21, 'Husk', 'NUTS', false, 'Filbert', 93.87),
+                   (22, 'Husk', 'NUTS', true, 'Almond', 38.24);
+        </sql>
+    </changeSet>
+
+
+</databaseChangeLog>
