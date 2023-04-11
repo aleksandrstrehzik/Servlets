@@ -17,47 +17,6 @@ public class Card {
     private Integer id;
     private String name;
 
-   /* public Card() {
-    }
-
-    public Card(BigDecimal discount, Integer id, String name) {
-        this.discount = discount;
-        this.id = id;
-        this.name = name;
-    }*/
-
-  /*  public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "CardImpl{" +
-                "discount=" + discount +
-                ", id=" + id +
-                '}';
-    }
-
-    public BigDecimal getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(BigDecimal discount) {
-        this.discount = discount;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }*/
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
